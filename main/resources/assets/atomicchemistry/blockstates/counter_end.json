@@ -1,0 +1,9 @@
+{
+    "variants": {
+        "normal": {"model": "atomicchemistry:counter_end" },
+        "facing=east": {"model": "atomicchemistry:counter_end", "y": 270 },
+        "facing=west": {"model": "atomicchemistry:counter_end", "y": 90 },
+        "facing=south": {"model": "atomicchemistry:counter_end", "y": 0 },
+        "facing=north": {"model": "atomicchemistry:counter_end", "y": 180 }
+    }
+}

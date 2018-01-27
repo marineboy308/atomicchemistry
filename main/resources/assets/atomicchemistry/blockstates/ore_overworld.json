@@ -1,0 +1,6 @@
+{
+    "variants": {
+        "variant=copper": {"model": "atomicchemistry:ore_overworld_copper"},
+        "variant=aluminium": {"model": "atomicchemistry:ore_overworld_aluminium"}
+    }
+}

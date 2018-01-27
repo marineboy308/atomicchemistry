@@ -1,0 +1,19 @@
+itemGroup.atomic_chemistrytab=Atomic Chemistry
+
+item.tube_test.name=Test Tube
+
+tile.microscope.name=Microscope
+tile.test_tube_rack.name=Test Tube Rack
+tile.atomic_scanner.name=Atomic Scanner
+
+tile.counter.name=Lab Counter
+tile.counter_corner.name=Lab Counter Corner
+tile.counter_end.name=Lab Counter End
+
+tile.ore_overworld_copper.name=Copper Ore
+tile.ore_overworld_aluminium.name=Aluminium Ore
+
+tile.planks_rubber.name=Rubber Tree Planks
+tile.log_rubber.name=Rubber Log
+tile.leaves_rubber.name=Rubber Leaves
+tile.sapling_rubber.name=Rubber Sapling

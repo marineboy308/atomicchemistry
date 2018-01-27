@@ -1,0 +1,16 @@
+[
+{
+  "modid": "atomicchemistry",
+  "name": "Atomic Chemistry",
+  "description": "Fuse Atoms and Research Materials.",
+  "version": "${1.0}",
+  "mcversion": "${1.12.2}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["AcCeCore, marineboy308"],
+  "credits": "Everyone who gave input to this mod and helped along the way!",
+  "logoFile": "/assets/atomicchemistry/textures/logo/logo.png",
+  "screenshots": [],
+  "dependencies": []
+}
+]

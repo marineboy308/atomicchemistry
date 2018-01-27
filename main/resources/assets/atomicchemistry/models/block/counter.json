@@ -1,0 +1,36 @@
+{
+    "parent": "block/block",
+    "textures": {
+        "0": "minecraft:blocks/concrete_white",
+        "1": "minecraft:blocks/hardened_clay_stained_cyan",
+        "particle": "minecraft:blocks/concrete_white"
+    },
+    "elements": [
+        {
+            "name": "Base",
+            "from": [ 0.0, 0.0, 0.0 ], 
+            "to": [ 16.0, 13.0, 13.0 ], 
+            "faces": {
+                "north": { "texture": "#0", "uv": [ 0.0, 0.0, 16.0, 13.0 ] },
+                "east": { "texture": "#0", "uv": [ 0.0, 0.0, 13.0, 13.0 ] },
+                "south": { "texture": "#0", "uv": [ 0.0, 0.0, 16.0, 13.0 ] },
+                "west": { "texture": "#0", "uv": [ 0.0, 0.0, 13.0, 13.0 ] },
+                "up": { "texture": "#0", "uv": [ 0.0, 0.0, 16.0, 13.0 ] },
+                "down": { "texture": "#0", "uv": [ 0.0, 0.0, 16.0, 13.0 ] }
+            }
+        },
+        {
+            "name": "Top",
+            "from": [ 0.0, 13.0, 0.0 ], 
+            "to": [ 16.0, 16.0, 16.0 ], 
+            "faces": {
+                "north": { "texture": "#1", "uv": [ 0.0, 0.0, 16.0, 3.0 ] },
+                "east": { "texture": "#1", "uv": [ 0.0, 0.0, 16.0, 3.0 ] },
+                "south": { "texture": "#1", "uv": [ 0.0, 0.0, 16.0, 3.0 ] },
+                "west": { "texture": "#1", "uv": [ 0.0, 0.0, 16.0, 3.0 ] },
+                "up": { "texture": "#1", "uv": [ 0.0, 0.0, 16.0, 16.0 ] },
+                "down": { "texture": "#1", "uv": [ 0.0, 0.0, 16.0, 16.0 ] }
+            }
+        }
+    ]
+}

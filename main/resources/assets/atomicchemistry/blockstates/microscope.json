@@ -1,0 +1,9 @@
+{
+    "variants": {
+        "normal": {"model": "atomicchemistry:microscope" },
+        "facing=east": {"model": "atomicchemistry:microscope", "y": 270 },
+        "facing=west": {"model": "atomicchemistry:microscope", "y": 90 },
+        "facing=south": {"model": "atomicchemistry:microscope", "y": 0 },
+        "facing=north": {"model": "atomicchemistry:microscope", "y": 180 }
+    }
+}

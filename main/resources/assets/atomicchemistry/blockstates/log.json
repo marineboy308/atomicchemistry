@@ -1,0 +1,8 @@
+{
+    "variants": {
+        "axis=y,variant=rubber": { "model": "atomicchemistry:log_rubber" },
+        "axis=z,variant=rubber": { "model": "atomicchemistry:log_rubber", "x": 90 },
+        "axis=x,variant=rubber": { "model": "atomicchemistry:log_rubber", "x": 90, "y": 90 },
+        "axis=none,variant=rubber": { "model": "atomicchemistry:log_rubber" }
+    }
+}

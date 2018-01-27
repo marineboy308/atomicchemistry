@@ -1,0 +1,9 @@
+{
+    "variants": {
+        "normal": {"model": "atomicchemistry:test_tube_rack" },
+        "facing=east": {"model": "atomicchemistry:test_tube_rack", "y": 270 },
+        "facing=west": {"model": "atomicchemistry:test_tube_rack", "y": 90 },
+        "facing=south": {"model": "atomicchemistry:test_tube_rack", "y": 0 },
+        "facing=north": {"model": "atomicchemistry:test_tube_rack", "y": 180 }
+    }
+}

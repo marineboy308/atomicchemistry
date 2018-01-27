@@ -1,0 +1,9 @@
+{
+    "variants": {
+        "normal": {"model": "atomicchemistry:atomic_scanner" },
+        "facing=east": {"model": "atomicchemistry:atomic_scanner", "y": 270 },
+        "facing=west": {"model": "atomicchemistry:atomic_scanner", "y": 90 },
+        "facing=south": {"model": "atomicchemistry:atomic_scanner", "y": 0 },
+        "facing=north": {"model": "atomicchemistry:atomic_scanner", "y": 180 }
+    }
+}
