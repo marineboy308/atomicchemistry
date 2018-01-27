@@ -54,7 +54,8 @@ public class EnumHandler {
 	
 	public static enum EnumTypeTree implements IStringSerializable {
 		
-		RUBBER(0,"rubber");
+		RUBBER(0,"rubber"),
+		ATOM(1,"atom");
 		
 		private static final EnumTypeTree[] META_LOOKUP = new EnumTypeTree[values().length];
 		private final int meta;

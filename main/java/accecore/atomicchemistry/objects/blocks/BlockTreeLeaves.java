@@ -1,6 +1,7 @@
 package accecore.atomicchemistry.objects.blocks;
 
 import java.util.List;
+import java.util.Random;
 
 import javax.annotation.Nullable;
 
@@ -13,6 +14,7 @@ import accecore.atomicchemistry.objects.blocks.item.ItemBlockVariants;
 import accecore.atomicchemistry.util.handlers.EnumHandler;
 import accecore.atomicchemistry.util.interfaces.IHasModel;
 import accecore.atomicchemistry.util.interfaces.IMetaName;
+import accecore.atomicchemistry.world.gen.generators.WorldGenRubberTree;
 import net.minecraft.block.BlockLeaves;
 import net.minecraft.block.BlockPlanks.EnumType;
 import net.minecraft.block.SoundType;
@@ -22,6 +24,7 @@ import net.minecraft.block.state.BlockStateContainer;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.EntityLivingBase;
+import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.BlockRenderLayer;
@@ -62,6 +65,13 @@ public class BlockTreeLeaves extends BlockLeaves implements IMetaName, IHasModel
 	public void onBlockPlacedBy(World worldIn, BlockPos pos, IBlockState state, EntityLivingBase placer, ItemStack stack) {
 		setDefaultState(this.blockState.getBaseState().withProperty(VARIANT, EnumHandler.EnumTypeTree.RUBBER).withProperty(CHECK_DECAY, Boolean.valueOf(true)).withProperty(DECAYABLE, Boolean.valueOf(false)));
 	}
+	
+	/**
+	@Override
+	public Item getItemDropped(IBlockState state, Random rand, int fortune) {
+		return EnumHandler.EnumTypeTree.values()[0];
+	}
+	*/
 	
 	@Override
 	public boolean shouldSideBeRendered(IBlockState blockState, IBlockAccess blockAccess, BlockPos pos, EnumFacing side) {
