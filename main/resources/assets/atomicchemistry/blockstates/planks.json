@@ -1,5 +1,6 @@
 {
     "variants": {
-        "variant=rubber": {"model": "atomicchemistry:planks_rubber"}
+        "variant=rubber": {"model": "atomicchemistry:planks_rubber"},
+        "variant=atom": {"model": "atomicchemistry:planks_atom"}
     }
 }

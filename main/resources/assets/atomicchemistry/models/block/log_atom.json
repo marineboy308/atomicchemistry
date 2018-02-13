@@ -1,0 +1,7 @@
+{
+    "parent": "block/cube_column",
+    "textures": {
+        "end": "atomicchemistry:blocks/log_atom_top",
+        "side": "atomicchemistry:blocks/log_atom"
+    }
+}

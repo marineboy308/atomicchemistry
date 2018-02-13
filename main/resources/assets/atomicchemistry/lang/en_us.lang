@@ -1,6 +1,10 @@
+generator.atomic=Atomic Level
+
 itemGroup.atomic_chemistrytab=Atomic Chemistry
 
 item.tube_test.name=Test Tube
+
+tile.abyss.name=Abyss
 
 tile.microscope.name=Microscope
 tile.test_tube_rack.name=Test Tube Rack
@@ -13,7 +17,15 @@ tile.counter_end.name=Lab Counter End
 tile.ore_overworld_copper.name=Copper Ore
 tile.ore_overworld_aluminium.name=Aluminium Ore
 
-tile.planks_rubber.name=Rubber Tree Planks
-tile.log_rubber.name=Rubber Log
+tile.planks_rubber.name=Rubber Planks
+tile.log_rubber.name=Rubber Wood
 tile.leaves_rubber.name=Rubber Leaves
 tile.sapling_rubber.name=Rubber Sapling
+
+tile.planks_atom.name=Atom Planks
+tile.log_atom.name=Atom Wood
+tile.leaves_atom.name=Atom Leaves
+tile.sapling_atom.name=Atom Sapling
+
+tile.dirt_atomic.name=Atomic Dirt
+tile.dirt_hardened_atomic.name=Hardened Atomic Dirt

@@ -1,6 +1,9 @@
 {
     "variants": {
         "stage=0,variant=rubber": { "model": "atomicchemistry:sapling_rubber" },
-        "stage=1,variant=rubber": { "model": "atomicchemistry:sapling_rubber" }
+        "stage=1,variant=rubber": { "model": "atomicchemistry:sapling_rubber" },
+        
+        "stage=0,variant=atom": { "model": "atomicchemistry:sapling_atom" },
+        "stage=1,variant=atom": { "model": "atomicchemistry:sapling_atom" }
     }
 }

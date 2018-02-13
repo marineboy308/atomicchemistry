@@ -3,6 +3,11 @@
         "axis=y,variant=rubber": { "model": "atomicchemistry:log_rubber" },
         "axis=z,variant=rubber": { "model": "atomicchemistry:log_rubber", "x": 90 },
         "axis=x,variant=rubber": { "model": "atomicchemistry:log_rubber", "x": 90, "y": 90 },
-        "axis=none,variant=rubber": { "model": "atomicchemistry:log_rubber" }
+        "axis=none,variant=rubber": { "model": "atomicchemistry:log_rubber" },
+        
+        "axis=y,variant=atom": { "model": "atomicchemistry:log_atom" },
+        "axis=z,variant=atom": { "model": "atomicchemistry:log_atom", "x": 90 },
+        "axis=x,variant=atom": { "model": "atomicchemistry:log_atom", "x": 90, "y": 90 },
+        "axis=none,variant=atom": { "model": "atomicchemistry:log_atom" }
     }
 }

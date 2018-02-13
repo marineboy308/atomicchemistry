@@ -1,0 +1,6 @@
+{
+    "parent": "block/cross",
+    "textures": {
+        "cross": "atomicchemistry:blocks/sapling_atom"
+    }
+}

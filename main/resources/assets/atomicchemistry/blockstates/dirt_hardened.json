@@ -1,0 +1,5 @@
+{
+    "variants": {
+        "variant=atomic": {"model": "atomicchemistry:dirt_hardened_atomic"}
+    }
+}
