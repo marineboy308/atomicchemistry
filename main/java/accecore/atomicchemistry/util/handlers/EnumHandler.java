@@ -99,4 +99,51 @@ public class EnumHandler {
 			}
 		}
 	}
+	
+	public static enum EnumTypeMaterials implements IStringSerializable {
+		
+		ATOMIC(0,"atomic");
+		
+		private static final EnumTypeMaterials[] META_LOOKUP = new EnumTypeMaterials[values().length];
+		private final int meta;
+		private final String name, unlocalizedName;
+
+		private EnumTypeMaterials(int meta, String name) {
+			this(meta,name,name);
+		}
+		
+		private EnumTypeMaterials(int meta, String name, String unlocalizedName) {
+			this.meta = meta;
+			this.name= name;
+			this.unlocalizedName = unlocalizedName;
+		}
+		
+		@Override
+		public String getName() {
+			return this.name;
+		}
+		
+		public int getMeta() {
+			return this.meta;
+		}
+		
+		public String getUnlocalizedName() {
+			return this.unlocalizedName;
+		}
+		
+		@Override
+		public String toString() {
+			return this.name;
+		}
+		
+		public static EnumTypeMaterials byMetadata(int meta) {
+			return META_LOOKUP[meta];
+		}
+		
+		static {
+			for (EnumTypeMaterials enumtype : values()) {
+				META_LOOKUP[enumtype.getMeta()] = enumtype;
+			}
+		}
+	}
 }

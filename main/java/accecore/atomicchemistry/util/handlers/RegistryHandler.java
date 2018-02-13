@@ -1,12 +1,15 @@
 package accecore.atomicchemistry.util.handlers;
 
+import accecore.atomicchemistry.init.BiomeInit;
 import accecore.atomicchemistry.init.BlockInit;
 import accecore.atomicchemistry.init.ItemInit;
 import accecore.atomicchemistry.util.interfaces.IHasModel;
 import accecore.atomicchemistry.world.gen.WorldGenCustomOres;
 import accecore.atomicchemistry.world.gen.WorldGenCustomTrees;
+import accecore.atomicchemistry.world.types.WorldTypeAtomicLevel;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
+import net.minecraft.world.WorldType;
 import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.fml.common.Mod.EventBusSubscriber;
@@ -48,8 +51,14 @@ public class RegistryHandler {
 		}
 	}
 	
-	public static void otherRegistries() {
+	public static void perInitRegistries() {
 		GameRegistry.registerWorldGenerator(new WorldGenCustomOres(), 0);
 		GameRegistry.registerWorldGenerator(new WorldGenCustomTrees(), 0);
+		
+		BiomeInit.registerBiomes();
+	}
+	
+	public static void postInitRegistries() {
+		WorldType ATOMICLEVEL = new WorldTypeAtomicLevel();
 	}
 }

@@ -33,10 +33,11 @@ public class BlockMicroscope extends Block implements IHasModel {
 		setRegistryName(name);
 		setDefaultState(this.blockState.getBaseState().withProperty(FACING, EnumFacing.NORTH));
 		setCreativeTab(Main.ATOMICCHEMISTRY);
-		setHarvestLevel("pickaxe", 2);
 		
 		setResistance(2.0F);
 		setHardness(1.8F);
+		
+		this.setHarvestLevel("pickaxe", 1);
 		
 		BlockInit.BLOCKS.add(this);
 		ItemInit.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));

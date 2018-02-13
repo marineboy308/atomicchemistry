@@ -33,10 +33,11 @@ public class BlockCounter extends Block implements IHasModel {
 		setUnlocalizedName(name);
 		setRegistryName(name);
 		setCreativeTab(Main.ATOMICCHEMISTRY);
-		setHarvestLevel("pickaxe", 1);
 		
 		setResistance(7.0F);
 		setHardness(2.0F);
+		
+		this.setHarvestLevel("pickaxe", 1);
 		
 		setSoundType(SoundType.STONE);
 		

@@ -13,6 +13,7 @@ import accecore.atomicchemistry.objects.blocks.item.ItemBlockVariants;
 import accecore.atomicchemistry.util.handlers.EnumHandler;
 import accecore.atomicchemistry.util.interfaces.IHasModel;
 import accecore.atomicchemistry.util.interfaces.IMetaName;
+import accecore.atomicchemistry.world.gen.generators.WorldGenAtomTree;
 import accecore.atomicchemistry.world.gen.generators.WorldGenRubberTree;
 import net.minecraft.block.BlockBush;
 import net.minecraft.block.IGrowable;
@@ -169,6 +170,9 @@ public class BlockTreeSaplings extends BlockBush implements IGrowable, IMetaName
 		{
 		case RUBBER:
 			gen = new WorldGenRubberTree();
+			break;
+		case ATOM:
+			gen = new WorldGenAtomTree();
 			break;
 		}
 		

@@ -16,17 +16,17 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import net.minecraft.world.gen.feature.WorldGenAbstractTree;
 
-public class WorldGenRubberTree extends WorldGenAbstractTree 
+public class WorldGenAtomTree extends WorldGenAbstractTree 
 {
-	public static final IBlockState LOG = BlockInit.WOODLOGS.getDefaultState().withProperty(BlockWoodLogs.VARIANT, EnumHandler.EnumTypeTree.RUBBER);
-	public static final IBlockState LEAF = BlockInit.TREELEAVES.getDefaultState().withProperty(BlockTreeLeaves.VARIANT, EnumHandler.EnumTypeTree.RUBBER);
+	public static final IBlockState LOG = BlockInit.WOODLOGS.getDefaultState().withProperty(BlockWoodLogs.VARIANT, EnumHandler.EnumTypeTree.ATOM);
+	public static final IBlockState LEAF = BlockInit.TREELEAVES.getDefaultState().withProperty(BlockTreeLeaves.VARIANT, EnumHandler.EnumTypeTree.ATOM);
 	
 	private final int minHeight;
 	
-	public WorldGenRubberTree() 
+	public WorldGenAtomTree() 
 	{
 		super(false);
-		this.minHeight = 5;
+		this.minHeight = 8;
 	}
 
 	@Override
@@ -80,9 +80,10 @@ public class WorldGenRubberTree extends WorldGenAbstractTree
 			{
 				state.getBlock().onPlantGrow(state, world, down, pos);
 				
-				for(int yPos = y - 2 + height; yPos <= y + height + 1; yPos++) // (radius, height)
+				for(int yPos = y - 1 + height; yPos <= y + height + 6; yPos++) //leaf height
 				{
-					int b1 = yPos - (y + (height+1));
+					int b1 = yPos - (y + (height+2)); //leaf radius
+					System.out.println(b1);
 					int b2 = 1 - b1 / 2;
 					
 					for(int xPos = x - b2; xPos <= x + b2; xPos++)
@@ -98,7 +99,7 @@ public class WorldGenRubberTree extends WorldGenAbstractTree
 								IBlockState treeState = world.getBlockState(treePos);
 								if(treeState.getBlock().isAir(treeState, world, treePos) || treeState.getBlock().isAir(treeState, world, treePos))
 								{
-									this.setBlockAndNotifyAdequately(world, treePos.add(0, 0, 0), LEAF);
+									this.setBlockAndNotifyAdequately(world, treePos.add(0, -3, 0), LEAF);
 								}
 							}
 						}

@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Random;
 
+import accecore.atomicchemistry.world.biomes.BiomeAtomic;
+import accecore.atomicchemistry.world.gen.generators.WorldGenAtomTree;
 import accecore.atomicchemistry.world.gen.generators.WorldGenRubberTree;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
@@ -16,6 +18,7 @@ import net.minecraftforge.fml.common.IWorldGenerator;
 public class WorldGenCustomTrees implements IWorldGenerator
 {
 	private final WorldGenerator RUBBER = new WorldGenRubberTree();
+	private final WorldGenerator ATOMIC = new WorldGenAtomTree();
 	
 	@Override
 	public void generate(Random random, int chunkX, int chunkZ, World world, IChunkGenerator chunkGenerator, IChunkProvider chunkProvider) 
@@ -29,6 +32,7 @@ public class WorldGenCustomTrees implements IWorldGenerator
 		case 0:
 			
 			runGenerator(RUBBER, world, random, chunkX, chunkZ, 2, -1, 0, BiomeForest.class);
+			runGenerator(ATOMIC, world, random, chunkX, chunkZ, 1, -1, 0, BiomeAtomic.class);
 			
 			break;
 			

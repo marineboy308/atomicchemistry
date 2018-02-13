@@ -26,20 +26,20 @@ import net.minecraft.world.World;
 public class BlockAtomicScanner extends Block implements IHasModel {
 	
 	public static final PropertyDirection FACING = BlockHorizontal.FACING;
-	public static PropertyBool RENDER_FULLY = PropertyBool.create("render");
 	public static final AxisAlignedBB AABB_X = new AxisAlignedBB(0.125D, 0, 0.25D, 0.875D, 0.6875D, 0.75D);
 	public static final AxisAlignedBB AABB_Z = new AxisAlignedBB(0.25D, 0, 0.125D, 0.75D, 0.6875D, 0.875D);
 
 	public BlockAtomicScanner(String name, Material material) {
 		super(material);
-		setUnlocalizedName(name);
-		setRegistryName(name);
-		setDefaultState(this.blockState.getBaseState().withProperty(FACING, EnumFacing.NORTH));
-		setCreativeTab(Main.ATOMICCHEMISTRY);
-		setHarvestLevel("pickaxe", 2);
+		this.setUnlocalizedName(name);
+		this.setRegistryName(name);
+		this.setDefaultState(this.blockState.getBaseState().withProperty(FACING, EnumFacing.NORTH));
+		this.setCreativeTab(Main.ATOMICCHEMISTRY);
 		
-		setResistance(2.0F);
-		setHardness(1.8F);
+		this.setResistance(2.0F);
+		this.setHardness(3.2F);
+		
+		this.setHarvestLevel("pickaxe", 2);
 		
 		BlockInit.BLOCKS.add(this);
 		ItemInit.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
@@ -83,11 +83,6 @@ public class BlockAtomicScanner extends Block implements IHasModel {
 	@Override
 	public boolean isFullCube(IBlockState state) {
 		return false; 
-	}
-	
-	@Override
-	public IBlockState getActualState(IBlockState state, IBlockAccess worldIn, BlockPos pos) {
-		return state.withProperty(RENDER_FULLY, false);
 	}
 	
 	 @Override

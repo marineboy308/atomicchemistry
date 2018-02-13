@@ -33,10 +33,11 @@ public class BlockTestTubeRack extends Block implements IHasModel {
 		setRegistryName(name);
 		setDefaultState(this.blockState.getBaseState().withProperty(FACING, EnumFacing.NORTH));
 		setCreativeTab(Main.ATOMICCHEMISTRY);
-		setHarvestLevel("pickaxe", 2);
 		
 		setResistance(1.0F);
 		setHardness(1.2F);
+		
+		this.setHarvestLevel("pickaxe", 2);
 		
 		BlockInit.BLOCKS.add(this);
 		ItemInit.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
